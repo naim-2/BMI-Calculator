@@ -24,7 +24,7 @@ node index.js
 ## 4. Open a broswer and interact with the website using the following URL:
 http://localhost:3000/
 
-## 5. To run the tests, run the following commands:
+## 5. To run the tests, run the following commands in a new terminal:
 npm test -- --coverage
 #
 node acceptance.js
