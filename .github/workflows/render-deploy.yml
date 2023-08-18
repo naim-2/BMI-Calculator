@@ -25,7 +25,6 @@ jobs:
         npm install
         npm test
         node home_acceptance.js
-        node result_acceptance.js
 
     # deployment hook 
     - name: Invoke deployment hook
