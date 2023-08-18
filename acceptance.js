@@ -4,7 +4,7 @@ try{
     (async () => {
     const browser = await puppeteer.launch({headless:true});
     const page = await browser.newPage();
-    await page.goto("https://localhost:3000/");
+    await page.goto("https://bmi-calculator-8hed.onrender.com/");
     const height = await page.$('#height')
     await height.type('180' )
     const weight = await page.$('#weight')
