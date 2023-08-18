@@ -1,0 +1,56 @@
+[
+  {
+    "height": "200",
+    "weight": "60",
+    "bmi": "15.00",
+    "status": "Underweight"
+  },
+  {
+    "height": "150",
+    "weight": "90",
+    "bmi": "40.00",
+    "status": "Obese"
+  },
+  {
+    "height": "150",
+    "weight": "90",
+    "bmi": "40.00",
+    "status": "Obese"
+  },
+  {
+    "height": "150",
+    "weight": "80",
+    "bmi": "35.56",
+    "status": "Obese"
+  },
+  {
+    "height": "150",
+    "weight": "70",
+    "bmi": "31.11",
+    "status": "Obese"
+  },
+  {
+    "height": "160",
+    "weight": "70",
+    "bmi": "27.34",
+    "status": "Overweight"
+  },
+  {
+    "height": "180",
+    "weight": "85",
+    "bmi": "26.23",
+    "status": "Overweight"
+  },
+  {
+    "height": "190",
+    "weight": "75",
+    "bmi": "20.78",
+    "status": "Normal weight"
+  },
+  {
+    "height": "160",
+    "weight": "45",
+    "bmi": "17.58",
+    "status": "Underweight"
+  }
+]

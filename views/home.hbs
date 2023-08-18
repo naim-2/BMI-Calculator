@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Home</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        <style>
+          .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+        </style>
+    </head>
+    <body>
+        <h1 class="text-center" style="margin-top: 40px">BMI Calculator</h1>
+        <div class="container">
+          <form action="/calculate_bmi" method="POST" class="text-center">
+            <div class="mb-3">
+              <label for="height" class="form-label">Enter Height (cm):</label>
+              <input type="number" name="height" id="height" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label for="weight" class="form-label">Enter Weight (kg):</label>
+              <input type="number" name="weight" id="weight" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary" id="submitBtn">Submit</button>
+          </form>
+
+          {{#if bmiResult}}
+            <div class="row mt-4 text-center">
+              <div class="col">
+                <h4>Thank you! Your BMI is: {{bmiResult}} ({{bmiStatus}})</h4>
+              </div>
+            </div>
+          {{/if}}
+
+          <div class="row mt-3 text-center">
+            <div class="col">
+              <form action="/report" method="GET" class="text-center">
+                <button type="submit" class="btn btn-primary">View Report</button>
+              </form>
+            </div>
+          </div>
+        </div>
+  </body>
+</html>
