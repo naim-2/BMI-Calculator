@@ -11,6 +11,8 @@ try{
     await weight.type('90' )
     const submitBMI = await page.$('#submitBtn')
     await submitBMI.click()
+    const viewBMI = await page.$('#viewBtn')
+    await viewBMI.click()
     const navigationPromise = page.waitForNavigation({ waitUntil: ['load', 'networkidle2'] });
     await navigationPromise;
     const pageTitle = await page.title();
