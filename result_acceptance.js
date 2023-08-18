@@ -9,15 +9,13 @@ try{
     await height.type('180' )
     const weight = await page.$('#weight')
     await weight.type('90' )
-    const submitBMI = await page.$('#submitBtn')
-    await submitBMI.click()
     const viewBMI = await page.$('#viewBtn')
     await viewBMI.click()
     const navigationPromise = page.waitForNavigation({ waitUntil: ['load', 'networkidle2'] });
     await navigationPromise;
     const pageTitle = await page.title();
-    assert(pageTitle === 'Report');
-    console.log("Title matched successfully");
+    assert(pageTitle === 'Result');
+    console.log("Result title matched successfully");
     await browser.close();
     })();
 } catch (err) {
